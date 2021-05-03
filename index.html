@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Tests</title>
+</head>
+<body>
+    <div id="section">
+        <input type="text" id="userinput">
+        <button onclick="testFunction()">Test</button>
+
+        <div id="container">
+
+        </div>
+    </div>
+    <div id="section">
+        <input type="number" id="zahl1" placeholder="Zahl1">
+        <input type="number" id="zahl2" placeholder="Zahl2">
+        <button onclick="calc()">Berechnen</button>
+        <p id="resultat">Ergebniss:</p>
+    </div>
+    <div id="section">
+        <input type="number" id="inputWidth" placeholder="Breite">
+        <input type="number" id="inputHeight" placeholder="Höhe">
+        <button onclick="create()">erstellen</button>
+        
+        <div id="Box"></div>
+    </div>
+    <div id="section">
+        <h2>Höhe</h2>
+        <input type="range" min="1" max="150" value="0" class="slider" id="höhe" oninput="maker()">
+        <p id="wert">Value:</p>
+        <h2>Breite</h2>
+        <input type="range" min="1" max="150" value="0" class="slider" id="breite" oninput="maker()"> <br/>
+        <p id="wert2">Value:</p>
+            <div id="box"></div> <br/>
+        <h2>Rot</h2>    
+        <input type="range" min="0" max="255" value="0" class="slider" id="Red" oninput="color()">
+        <p id="rotwert">Wert:</p> 
+        <h2>Grün</h2>
+        <input type="range" min="0" max="255" value="0" class="slider" id="Green" oninput="color()">
+        <p id="grünwert">Wert: </p>
+        <h2>Blau</h2>
+        <input type="range" min="0" max="255" value="0" class="slider" id="Blue" oninput="color()">   
+        <p id="blauwert">Wert:</p>
+    </div>
+    <div id="section">
+        <div id="editor">
+            <p>HTML</p>
+            <input type="text" placeholder="element type" id="element">
+            <input type="text" placeholder="Text" id="text">
+            <p>Text</p>
+            <input type="color" id="textColor">
+            <p>Hintergrund</p>
+            <input type="color" id="backgroundColor">
+            
+            <p>CSS</p>
+            <input type="text" id="Property" placeholder="property">
+            <input type="text" id="Wert" placeholder="value">
+
+            <button onclick="Generieren()">Generieren</button>
+        </div>
+        <div id="miniWebsite">
+
+        </div>
+    </div>
+    <div id="section">
+        <h2>Cat API</h2>
+        <div id="catFacts"></div>
+        <div id="Wetter">
+           <p id="wetterdaten"></p> 
+        </div>
+    
+
+        <script src="./index.js"></script>
+</body>
+</html>
